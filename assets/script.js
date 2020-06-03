@@ -24,8 +24,8 @@ function init(json) {
 
 			addArticles(files)
 
-			// setTimeout(function () { document.getElementsByClassName("loading")[0].style.opacity = "0" }, 1000)
-			// setTimeout(function () { document.getElementsByClassName("loading")[0].remove() }, 2000)
+			setTimeout(function () { document.getElementsByClassName("loading")[0].style.opacity = "0" }, 1000)
+			setTimeout(function () { document.getElementsByClassName("loading")[0].remove() }, 2000)
 		} else {
 			showError(this.status, this.statusText)
 		}
@@ -38,24 +38,24 @@ function init(json) {
 }
 
 function addArticles(files) {
-	let article, img, div
-	for (var i in files) {
-		article = document.createElement("article")
-		article.setAttribute("id","article"+files[i].id)
-		article.setAttribute("data-info",JSON.stringify({"auth":files[i].auth,"date":files[i].date}))
+	let art, img, div
+	files.forEach(article => {
+		art = document.createElement("article")
+		art.setAttribute("id","article"+article.id)
+		art.setAttribute("data-info",JSON.stringify({"auth":article.auth,"date":article.date, "tags":article.tags}))
 
 		img = document.createElement("img")
-		img.setAttribute("src","SVGs/"+files[i].src)
+		img.setAttribute("src","SVGs/"+article.src)
 		img.setAttribute("onclick","openImg(this)")
 
 		a = document.createElement("a")
-		a.innerHTML = files[i].auth
+		a.innerHTML = article.auth
 
-		article.append(img)
-		article.append(a)
+		art.append(img)
+		art.append(a)
 
-		document.getElementById("articles").append(article)
-	}
+		document.getElementById("articles").append(art)
+	})
 }
 
 function showError(statusCode, statusText) {
@@ -76,6 +76,17 @@ function openImg(img) {
 	document.querySelector(".date").innerHTML = formatDate(obj.date)
 	document.querySelector(".auth").innerHTML = obj.auth
 	document.querySelector(".image>img").src = img.src
+
+	let tagList = ""
+	obj.tags.forEach(tag=>{
+		tagList += "<span>"+tag+"</span>"
+	})
+	document.getElementsByClassName('tags')[0].innerHTML = tagList
+}
+
+function closeImg(img) {
+	img.parentNode.style.display = 'none';
+	document.getElementsByTagName('body')[0].style.overflow = 'initial'
 }
 
 isInViewport = (faisal,x)=>{
@@ -103,3 +114,5 @@ function toggleMenu() {
 	document.querySelector('.smallMenuBars').classList.toggle('open')
 	document.querySelector('.smallMenu').classList.toggle('open')
 }
+
+window.onload = function() { init("assets/files.json") }
