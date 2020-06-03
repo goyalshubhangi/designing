@@ -3,9 +3,9 @@
 ::-webkit-scrollbar-thumb{background:darkGREY;border-radius:8px;}
 html{scroll-behavior:smooth;}
 body{margin:0;color:#DF4A4A;font-family:Montserrat,sans-serif;}
-a{color:inherit;text-decoration:none;padding:0.5vh 1vh;transition-duration:0.2s;border-radius:0.25vh;}
+a{color:inherit;text-decoration:none;padding:0.5vh 1vh;transition-duration:0.2s;border-radius:0.25vh;word-break:break-all;}
 
-.loading{position:fixed;height:100%;width:100%;top:0;left:0;text-align:center;background-color:white;transition:opacity 1s;z-index:3;display:none;}
+.loading{position:fixed;height:100%;width:100%;top:0;left:0;text-align:center;background-color:white;transition:opacity 1s;z-index:3;}
 .loading span{position:absolute;width:100%;top:50%;transform:translateX(-50%);text-align:center;font-size:10vh;}
 
 header{width:100%;background-color:#DF4A4A;box-shadow:0 2px 5px #00000077;color:white;height:10vh;padding:1vh 5vh;position:fixed;top:0;z-index:2;}
@@ -25,11 +25,11 @@ header menu.smallMenuBars{float:right;display:none;}
 .smallMenu a{display:block;text-align:center;font-size:3.5vh;padding:2vh;}
 
 .heading{text-align:center;font-size:5.5vh;font-family:Gabriela,serif;}
-.text{text-align:center;font-size:5vh;font-family:Dancing Script,sans-serif;}
+.text{font-size:5vh;font-family:Dancing Script,sans-serif;}
 
 .landing{min-height:100vh;margin:0 auto;padding-top:10vh;position:relative;}
 .landing .heading{font-size:6vh;position:absolute;left:50%;top:25%;transform:translateX(-50%);}
-.landing .text{width:33.33%;position:absolute;left:50%;top:55%;transform:translate(-50%,-55%);}
+.landing .text{width:33.33%;position:absolute;left:50%;top:55%;transform:translate(-50%,-55%);text-align:center;}
 .landing img.laptop{width:20%;position:absolute;bottom:10px;left:50%;transform:translateX(-50%);}
 .landing img.books{position:absolute;left:25%;top:15%;width:12.5%;}
 .landing img.faisal{width:35%;position:absolute;bottom:0;left:-100px;}
@@ -50,7 +50,7 @@ article a{font-family:'Indie Flower',cursive;margin-top:2.5vh;text-align:right;}
 #contact .text{margin:7.5vh 0;}
 #contact .card{width:66.67%;margin:0 auto;background-color:#E67760;color:white;padding:10vh;position:relative;}
 #contact .card .coffee{position:absolute;top:-15vh;left:-6vh;width:25vh;}
-#contact .card .github-icon{height:5vh;transform:translateY(25%);}
+#contact .card .svg-icon{height:5vh;transform:translateY(25%);}
 #contact .card a:hover{color:#E67760;background-color:white;}
 
 footer{background-color:#B02828;color:white;font-size:3.33vh;font-family:'Indie Flower',cursive;padding:1vh 5%;text-align:left;}
@@ -64,7 +64,7 @@ footer{background-color:#B02828;color:white;font-size:3.33vh;font-family:'Indie 
 .tags{height:70%;font-size:3.33vh;padding:5% 0;}
 .tags span{padding:0.5vh 1vh;color:white;background-color:#DF4A4A;border-radius:0.3vh;cursor:pointer;margin:0.6vh 0.25vh;display:inline-block;box-shadow:0 2px 3px black;transition-duration:0.2s;white-space:nowrap;}
 .tags span:hover{color:#DF4A4A;background-color:white;}
-.auth{font-family:'Indie Flower',cursive;height:10%;font-size:4vh;text-align:center;}
+.auth{font-family:'Indie Flower',cursive;height:10%;font-size:4vh;text-align:right;}
 
 @media screen and (max-width:1000px) and (orientation:portrait){
 	header menu{display:none;}
@@ -91,6 +91,7 @@ footer{background-color:#B02828;color:white;font-size:3.33vh;font-family:'Indie 
 	.closeBtn{top:0.5%;}
 	.info,.image{width:100%;}
 	.image{height:80%;margin-top:10%;}
-	.info{height:10%;}
+	.info{height:10%;padding:5% 2.5%;}
 	.date,.tags{display:none;}
+	.auth{height:100%;}
 }
