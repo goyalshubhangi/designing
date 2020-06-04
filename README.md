@@ -1,5 +1,11 @@
 ![](social-preview.png)
 
+![](https://img.shields.io/static/v1?label=Status&message=Deployed&color=success)
+&emsp;
+![](https://img.shields.io/static/v1?label=Total+Illustrations&message=10&color=informational)
+&emsp;
+![](https://img.shields.io/static/v1?label=Total+Contributors&message=2&color=blueviolet)
+
 # Our Illustrations
 
 This is a collaboration over some illustrations we both designed while being stuck at home during the corona-virus lockdown. We designed these while learning adobe illustrator basics. We used photoshop for some of the tweaks and changes too.
@@ -38,24 +44,33 @@ Fork this repository and add SVGs to ``SVGs/`` and AI files to ``AIs``. Also, ad
 
 Then, send a pull request to this [repository](https://github.com/goyalshubhangi/designing). If you have any issues regarding anything, you can open an issue here. We would love collaborations.:sparkling_heart:
 
-## Heyy, it's us :wave:</h2>
-<p align="center">
-  &emsp;
-  &emsp;
-  <img src="https://goyalshubhangi.github.io/img/about.jpg" alt="Shubhangi says hi" width="200">
-</p>
-<p align="center">
-  <a href="https://goyalshubhangi.github.io"><img src="https://img.shields.io/static/v1?label=Developer+/+Designer&message=Shubhangi&color=yellow&style=for-the-badge"></a>
-</p>
+## Contributors
 
-<p align="center">
-  &emsp;
-  &emsp;
-  <img src="https://faisalakhtar.github.io/img/Faisal.jpg" alt="Faisal says hi" width="200">
-</p>
-<p align="center">
-  <a href="https://faisalakhtar.github.io"><img src="https://img.shields.io/static/v1?label=Developer+/+Designer&message=Faisal&color=blue&style=for-the-badge"></a>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://faisalakhtar.github.io">
+        <img src="https://avatars.githubusercontent.com/faisalakhtar" width="200px" alt="Faisal">
+        <br>
+        <b>Faisal Akhtar</b>
+      </a>
+      <br>
+      <a title="Code">💻</a>
+      <a title="Documentation">📖</a>
+      <a title="Maintenance">🚧</a>
+    </td>
+    <td align="center">
+      <a href="http://goyalshubhangi.github.io">
+        <img src="https://avatars.githubusercontent.com/goyalshubhangi" width="200px" alt="Shubhangi">
+        <br>
+        <b>Shubhangi Goyal</b>
+      </a>
+      <br>
+      <a title="Design">🎨</a>
+      <a title="Maintenance">🚧</a>
+    </td>
+  </tr>
+</table>
 
 ## Licensing
 
