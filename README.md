@@ -2,9 +2,9 @@
 
 ![](https://img.shields.io/static/v1?label=Status&message=Deployed&color=success)
 &emsp;
-![](https://img.shields.io/static/v1?label=Total+Illustrations&message=10&color=informational)
+![](https://img.shields.io/static/v1?label=Illustrations&message=11&color=informational)
 &emsp;
-![](https://img.shields.io/static/v1?label=Total+Contributors&message=2&color=blueviolet)
+![](https://img.shields.io/static/v1?label=Contributors&message=2&color=blueviolet)
 
 # Our Illustrations
 
@@ -25,7 +25,9 @@ None
 
 ## Contributing
 
-Fork this repository and add SVGs to ``SVGs/`` and AI files to ``AIs``. Also, add your illustration details in ``assets/files.json`` in the following format:
+1. Fork this repository
+
+2. Add SVGs to ``SVGs/`` and AI files to ``AIs``. Also, add your illustration details in ``assets/files.json`` in the following format:
 ```JSON
 {
      "id" : "n+1",
@@ -42,7 +44,9 @@ Fork this repository and add SVGs to ``SVGs/`` and AI files to ``AIs``. Also, ad
 - In ``date``, time when you made final changes to your design ``[YYYY-MM-DD HH:MM:SS in 24-hr format]``
 - In ``tags``, at most 10 tags related to the design
 
-Then, send a pull request to this [repository](https://github.com/goyalshubhangi/designing). If you have any issues regarding anything, you can open an issue here. We would love collaborations.:sparkling_heart:
+3. Send a pull request to this [repository](https://github.com/goyalshubhangi/designing).
+
+If you have any issues regarding anything, you can open an issue here. We would love collaborations.:sparkling_heart:
 
 ## Contributors
 
